@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Tudo Sobre Google Glass</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    </head>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+            <hgroup>
+        <h1>Google Glass</h1>
+    <h2>A revolução do Google está chegando!</h2>
+                </hgroup>
+
+                
+                <img id="icone" src="_imagens/contato.png">
+                
+<nav id="Menu">
+        <ul type="square">
+ <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+ <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+ <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+ <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+ <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+        </ul>
+</nav>
+
+                </header>
+
+Fale Conosco > Contato
+Formulário de Contato
+por Gustavo Guanabara
+Atualizado em 01/Maio/2013
+
+<form method="POST" id="fContato" action="mailto:guilheermetv98@gmail.com">
+    <fieldset id="usuario">
+        <legegend>Identificação do Usuário</legegend>
+        <p><label for="cNome"> Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+        <p><label for="cSenha"> Senha:</label> <input type="password" name="tSenha" id="cSenha" size="20" maxlength="30" placeholder="8 digitos"</p>
+        <p><label for="cEmail"> E-mail:</label> <input type="email" name="tEmail" id="cEmail" size="35" maxlength="45" placeholder="Digite seu E-mail"</p>
+    </fieldset>
+        <fieldset id="sexo">
+            <legend>Sexo</legend>
+            <input type="radio" nome="tSexo" id="cMas"/> <label for="cMas">Masculino</label><br/>
+             <input type="radio" nome="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+        <p><input type="date" nome="tIdade" id="cIdade"/>Data de Nascimento:</p>
+    </fieldset>
+
+<fieldset id="endereco">
+    <legend>Endereço do Usuário</legend>
+    <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Avenida/Rua"> </p>
+    <p><label for="cNumero">Número:</label><input type="number" name="tNumero" id="cNumero" size="10" maxlength="15" placeholder="Número da Casa"></p>
+    <p><label for="cEstado">Estado:</label><select name="tEstado" id="cEstado">
+        <optgroup label="Região Sudeste"><option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option></optgroup>
+        <optgroup label="Região Sul"><option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option></optgroup>
+        </select>
+    </p>
+    <p><label for="cCidade">Cidade:</label><input type="text" name="tCidade" id="cCidade" size="20" maxlength="40" placeholder="Sua cidade"> </p>
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Belford Roxo"></option>
+    </datalist>
+
+</fieldset>
+<fieldset>
+    <legend id="mensagem">Mensagem do Usuário</legend>
+    <p><label for="cUrg">Grau de Urgência</label></p>
+    <P>Mínimo <input type="range" name="tUrg" id="cUrg" min="0" max="10"></input> Máximo</P>
+
+    <p><label for="cMensagem">Mensagem:</label></p>
+    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem!"></textarea>
+
+</fieldset>
+
+<fieldset>
+    <legend id="pedido">Quero um Google Glass</legend>
+    Gostaria de adquirir um Google Glass quando disponível
+    Cor:
+    Quantidade:
+    Preço Total: R$
+</fieldset>
+</form>
+
+[BOTÃO ENVIAR]
+
+<footer id="rodape">
+
+    <p>Copyright &copy; 2020 - by Luiz Guilherme <br/>
+    <a href="http://facebook.com/cursoemvideo" target="_blank"> Facebook</a>  | <a href="http://twitter.com/cursoemvideo" target="_blank"> Twitter</a></p>
+    </footer>
+            </div>
+        </body>
+    </html>
